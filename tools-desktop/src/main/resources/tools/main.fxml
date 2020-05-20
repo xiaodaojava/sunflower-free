@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.MainController">
+    <children>
+        <TabPane fx:id="toolsTab" layoutX="0" layoutY="0" prefHeight="600.0" prefWidth="1000" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="关于">
+                    <fx:include source="set/set.fxml"></fx:include>
+                </Tab>
+                <Tab text="学习/问答">
+                    <fx:include source="study/study.fxml"></fx:include>
+                </Tab>
+                <Tab text="k8s工具">
+                    <fx:include source="kub/kub.fxml"></fx:include>
+                </Tab>
+                <Tab text="HOST工具">
+                    <fx:include source="host/host.fxml"></fx:include>
+                </Tab>
+                <Tab text="redis">
+                    <fx:include source="redis/redis.fxml"></fx:include>
+                </Tab>
+                <Tab text="图床">
+                    <fx:include source="image/bed.fxml"></fx:include>
+                </Tab>
+                <Tab text="SSH">
+                    <fx:include source="ssh/ssh.fxml"></fx:include>
+                </Tab>
+                <Tab text="sql">
+                    <fx:include source="sql/sql.fxml"></fx:include>
+                </Tab>
+                <Tab text="小工具">
+                    <fx:include source="common/common.fxml"></fx:include>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

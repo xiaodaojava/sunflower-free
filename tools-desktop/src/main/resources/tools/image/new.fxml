@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.image.NewController">
+
+    <RadioButton fx:id="githubRadio" layoutX="140.0" layoutY="37.0" mnemonicParsing="false" text="github" />
+    <RadioButton fx:id="giteeRadio" layoutX="300.0" layoutY="37.0" mnemonicParsing="false" text="gitee" />
+    <TextField fx:id="ownerField" layoutX="112.0" layoutY="110.0" prefHeight="27.0" prefWidth="288.0" promptText="git用户名" />
+    <TextField fx:id="repoField" layoutX="112.0" layoutY="154.0" prefHeight="18.0" prefWidth="288.0" promptText="git仓库名" />
+    <PasswordField fx:id="accessTokenField" layoutX="112.0" layoutY="205.0" prefHeight="27.0" prefWidth="288.0" promptText="git中person_access_token" />
+
+    <TextField fx:id="proxyField" layoutX="112.0" layoutY="270.0" promptText="代理的地址" />
+    <TextField fx:id="portField" layoutX="287.0" layoutY="270.0" prefHeight="17.0" prefWidth="113.0" promptText="代理的端口" />
+
+    <Button layoutX="231.0" layoutY="377.0" mnemonicParsing="false" onAction="#saveConfig" prefHeight="27.0" prefWidth="50.0" text="保存" />
+    <TextField fx:id="tagField" layoutX="112.0" layoutY="69.0" prefHeight="27.0" prefWidth="288.0" promptText="当前配置的tag" />
+
+
+</AnchorPane>

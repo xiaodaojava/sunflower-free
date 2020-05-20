@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.sql.SqlConController">
+   <children>
+      <TreeView fx:id="sqlTree" layoutX="21.0" layoutY="19.0" prefHeight="363.0" prefWidth="180.0" />
+      <TableView fx:id="resultTable" layoutX="218.0" layoutY="69.0" prefHeight="313.0" prefWidth="562.0" />
+      <Button onAction="#newQuery" layoutX="218.0" layoutY="19.0" mnemonicParsing="false" text="新建查询" />
+      <Button onAction="#generateMybatis" layoutX="332.0" layoutY="19.0" mnemonicParsing="false" text="mybatis生成" />
+   </children>
+</AnchorPane>

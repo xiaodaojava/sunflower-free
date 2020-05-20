@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.sql.SqlEditController">
+    <TextField fx:id="tagField" layoutX="112.0" layoutY="39.0" promptText="tag" />
+    <TextField fx:id="usernameField" layoutX="112.0" layoutY="163.0" promptText="username" />
+    <PasswordField fx:id="passwordField" layoutX="112.0" layoutY="211.0" promptText="password" />
+    <TextField fx:id="urlField" layoutX="112.0" layoutY="84.0" promptText="url" />
+    <TextField fx:id="portField" layoutX="112.0" layoutY="123.0" promptText="port" />
+    <Button layoutX="112.0" layoutY="260.0" mnemonicParsing="false" onAction="#save" text="保存" />
+</AnchorPane>

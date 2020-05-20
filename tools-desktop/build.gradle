@@ -1,0 +1,102 @@
+plugins {
+	id 'application'
+	id 'org.openjfx.javafxplugin' version '0.0.8'
+	id 'org.beryx.jlink' version '2.17.2'
+//	id 'org.javamodularity.moduleplugin' version '1.6.0'
+}
+javafx {
+	version = "14"
+	modules = [ 'javafx.controls' ,'javafx.fxml','javafx.swing','javafx.web']
+}
+java {
+	modularity.inferModulePath = true
+}
+sourceCompatibility = '14'
+
+tasks.withType(JavaCompile) {
+	options.compilerArgs += "--enable-preview"
+}
+
+tasks.withType(Test) {
+	jvmArgs += "--enable-preview"
+}
+
+tasks.withType(JavaExec) {
+	jvmArgs += '--enable-preview'
+}
+
+compileJava.options.encoding = 'UTF-8'
+mainClassName = "$moduleName/red.lixiang.tools.desktop.DesktopMain"
+
+application {
+	mainModule = 'red.lixiang.tools.desktopmain' // name defined in module-info.java
+	mainClass = 'red.lixiang.tools.desktop.DesktopMain'
+}
+dependencies {
+
+	compile ('red.lixiang.tools:sunshine-common:0.0.6'){
+		exclude group:'org.apache.poi'
+		exclude group:'org.jsoup'
+		exclude group:'com.ctrip.framework.apollo'
+		exclude group:'io.kubernetes'
+		exclude group: 'org.mybatis'
+	}
+	compile group: 'com.hierynomus', name: 'sshj', version: '0.27.0'
+
+
+	compile('com.fasterxml.jackson.core:jackson-databind:2.9.8')
+
+	compile('com.fasterxml.jackson.core:jackson-annotations:2.9.8')
+	runtime group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+
+//	compile('org.jetbrains.pty4j:pty4j:0.8.6')
+
+
+
+//	compile 'com.jfoenix:jfoenix:9.0.9'
+//	compile group: 'jakarta.ws.rs', name: 'jakarta.ws.rs-api', version: '2.1.6'
+//	compile group: 'com.sun.xml.ws', name: 'jaxws-rt', version: '2.3.2'
+//	compile group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: '2.3.2'
+//	compile group: 'org.glassfish.jaxb', name: 'jaxb-runtime', version: '2.3.2'
+////	compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
+////	compile group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0.1'
+////	compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.2'
+//	compile group: 'javax.activation', name: 'javax.activation-api', version: '1.2.0'
+//	runtimeOnly group: 'jakarta.activation', name: 'jakarta.activation-api', version: '1.2.1'
+//	compile group: 'com.sun.activation', name: 'jakarta.activation', version: '1.2.1'
+
+	// replacements for deprecated JDK module java.xml.ws
+//	runtimeOnly 'javax.xml.ws:jaxws-api:2.3.0' // javax.xml.ws.* classes
+//	runtimeOnly 'javax.jws:jsr181-api:1.0-MR1' // for javax.jws.* classes
+
+// replacement for deprecated JDK module java.xml.bind
+//	runtimeOnly 'javax.xml.bind:jaxb-api'
+//	runtimeOnly 'org.glassfish.jaxb:jaxb-runtime:2.3.0.1'
+//	runtimeOnly 'org.glassfish:javax.json:1.1.2'
+//	runtimeOnly 'org.eclipse:yasson:1.0.1'
+
+}
+//
+jlink{
+	options =['--compress','2','--no-header-files','--no-man-pages']
+	launcher{
+		name = 'Sunflower'
+	}
+	mergedModule {
+		requires 'java.xml.crypto';
+		requires 'java.management';
+		requires 'jdk.attach';
+		requires 'java.logging';
+		requires 'java.sql';
+		requires 'jdk.jdi';
+		requires 'java.xml';
+		requires 'java.desktop';
+		requires 'java.security.jgss';
+		requires 'jdk.javadoc';
+		requires 'java.instrument';
+		requires 'jdk.unsupported';
+		requires 'com.google.gson';
+
+	}
+
+}

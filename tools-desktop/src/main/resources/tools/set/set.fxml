@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="settingPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.set.SetController">
+   <children>
+      <ImageView fx:id="javaSubscribe" fitHeight="167.0" fitWidth="184.0" layoutX="164.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="userHead" fitHeight="60.0" fitWidth="70.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="whisperMini" fitHeight="167.0" fitWidth="207.0" layoutX="501.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="idLabel" layoutX="35.0" layoutY="92.0" text="ID:" />
+      <Label layoutX="191.0" layoutY="62.0" prefHeight="60.0" prefWidth="131.0" text="更多技术好文,实用工具,欢迎扫码关注公众号:java技术大本营" wrapText="true" />
+      <Label layoutX="498.0" layoutY="62.0" prefHeight="60.0" prefWidth="213.0" text="这里是一个匿名的世界,没人知道你是谁,有什么心酸委屈,囧事,开心的事,都可以来这里和大家分享一下~" wrapText="true" />
+
+      <TextArea fx:id="feedText" layoutX="250.0" layoutY="320.0" prefHeight="60.0" prefWidth="227.0" promptText="联系作者可以通过微信: best396975802或者邮箱: good396975802@qq.com" />
+      <Button layoutX="498.0" layoutY="320.0" mnemonicParsing="false" onAction="#feedback" text="提交反馈" />
+      <Button layoutX="498.0" layoutY="350.0" mnemonicParsing="false" onAction="#support" text="支持作者" />
+   </children>
+</AnchorPane>

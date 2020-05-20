@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.common.TranslatorController">
+    <children>
+        <TextArea fx:id="origin" layoutX="22.0" layoutY="33.0" prefHeight="79.0" prefWidth="558.0" />
+        <Button layoutX="279.0" layoutY="125.0" mnemonicParsing="false" onAction="#translator" text="翻译" />
+      <WebView fx:id="webView" layoutX="22.0" layoutY="170.0" prefHeight="200.0" prefWidth="558.0" />
+    </children>
+
+</AnchorPane>

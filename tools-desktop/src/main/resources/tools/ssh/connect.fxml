@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.ssh.SSHConnectController">
+   <children>
+      <TextArea fx:id="terminalArea" layoutX="46.0" layoutY="83.0" prefHeight="250.0" prefWidth="718.0" />
+      <Button layoutX="186.0" layoutY="30.0" mnemonicParsing="false" onAction="#uploadFile" text="上传文件" />
+      <TextField fx:id="fileName" layoutX="285.0" layoutY="30.0" promptText="输入文件名" />
+      <Button layoutX="475.0"  onAction="#downloadFile" layoutY="30.0" mnemonicParsing="false" text="下载文件" />
+      <TextField fx:id="commandField" layoutX="46.0" layoutY="342.0" onKeyReleased="#keyReleased" prefHeight="43.0" prefWidth="657.0" />
+      <Button layoutX="709.0" layoutY="350.0" mnemonicParsing="false" onAction="#sendCommand" text="发送" />
+      <Button layoutX="46.0" layoutY="30.0" mnemonicParsing="false" onAction="#reConnect" text="重新连接" />
+   </children>
+</AnchorPane>

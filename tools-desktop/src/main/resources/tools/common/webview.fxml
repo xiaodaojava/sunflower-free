@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.common.WebviewController">
+    <children>
+        <TextField fx:id="urlField" layoutX="14.0" layoutY="51.0" onKeyReleased="#keyReleased" prefHeight="31.0" prefWidth="510.0" />
+        <WebView fx:id="webView" layoutX="10.0" layoutY="106.0" prefHeight="259.0" prefWidth="580.0" />
+    </children>
+
+</AnchorPane>

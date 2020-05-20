@@ -1,14 +1,5 @@
 # 说明
 
-## 求打赏
-生活窘迫,难以为继, 开源代码,谋几两碎银,谢谢您嘞~
-![](https://gitee.com/smeilknife/image1/raw/bb014793b5c3325ace30613702cf775d4fa16c38/20200325/1585138767636.jpeg)
-![](https://gitee.com/smeilknife/image1/raw/master/2020/5/20/1589976429306.jpeg)
-
-## 运行
-jdk14, gradle 6.3
-使用idea右侧gradle面板->tools-desktop->application-run
-
 ## 打包
 修改gradle版本
 ./gradlew wrapper --gradle-version=6.3

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.sql.SqlController">
+   <children>
+      <TableView fx:id="sqlTable" layoutX="54.0" layoutY="108.0" prefHeight="259.0" prefWidth="651.0">
+        <columns>
+          <TableColumn fx:id="tagCol" prefWidth="75.0" text="tag" />
+          <TableColumn fx:id="urlCol" prefWidth="230.0" text="url" />
+            <TableColumn fx:id="usernameCol" prefWidth="123.0" text="username" />
+            <TableColumn fx:id="optCol" prefWidth="90.0" text="操作" />
+        </columns>
+      </TableView>
+      <Button onAction="#newConfig" layoutX="54.0" layoutY="57.0" mnemonicParsing="false" text="新增" />
+   </children>
+</AnchorPane>

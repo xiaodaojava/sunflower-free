@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0"
+            prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="red.lixiang.tools.desktop.controller.ssh.SSHEditController">
+   <children>
+      <TextField fx:id="tagField" layoutX="112.0" layoutY="39.0" promptText="tag" />
+      <TextField fx:id="usernameField" layoutX="112.0" layoutY="135.0" promptText="username" />
+      <PasswordField fx:id="passwordField" layoutX="112.0" layoutY="187.0" promptText="password" />
+      <TextField fx:id="ipField" layoutX="112.0" layoutY="84.0" promptText="ip" />
+      <Button onAction="#save" layoutX="112.0" layoutY="253.0" mnemonicParsing="false" text="保存" />
+   </children>
+</AnchorPane>

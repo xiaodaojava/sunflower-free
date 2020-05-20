@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="kubPane" prefHeight="405.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.kub.KubController">
+    <FlowPane fx:id="kubTagPane" layoutX="10.0" layoutY="31.0" prefHeight="10.0" prefWidth="600.0">
+        <Button onAction="#showEditModal">编辑配置</Button>
+    </FlowPane>
+    <TextField fx:id="podSearchField" layoutX="10.0" layoutY="67.0" promptText="输入容器的名字" />
+    <Button layoutX="150.0" layoutY="67.0" onAction="#searchPods">搜索</Button>
+    <TableView fx:id="kubTable" layoutX="25.0" layoutY="136.0" prefHeight="239.0" prefWidth="687.0">
+        <columns>
+            <TableColumn fx:id="nameCol" prefWidth="243.0" text="名称" />
+            <TableColumn fx:id="namespaceCol" prefWidth="101.0" text="命名空间" />
+            <TableColumn fx:id="statusCol" prefWidth="113.0" text="状态" />
+            <TableColumn fx:id="optionCol" prefWidth="150.0" text="操作" />
+        </columns>
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.kub.KubLogController">
+   <children>
+      <TextArea fx:id="logContentArea" layoutX="14.0" layoutY="55.0" prefHeight="328.0" prefWidth="774.0" />
+      <TextField fx:id="lineCount" layoutX="14.0" layoutY="21.0" prefHeight="16.0" prefWidth="132.0" promptText="输入行数" />
+      <Button onAction="#refreshLog" layoutX="159.0" layoutY="21.0" mnemonicParsing="false" text="刷新日志" />
+   </children>
+</AnchorPane>

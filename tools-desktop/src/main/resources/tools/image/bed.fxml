@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="bedPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.image.BedController">
+   <children>
+
+       <Label layoutX="83.0" layoutY="380.0" text="Markdown:" />
+       <Label layoutX="56.0" layoutY="425.0" text="MarkdownCDN:" />
+       <Label layoutX="111.0" layoutY="330.0" text="原图:" />
+
+      <TextField fx:id="markdownField" layoutX="168.0" layoutY="375.0" onMouseClicked="#copyImageUrl" prefHeight="17.0" prefWidth="484.0" />
+      <TextField fx:id="cdnField" layoutX="168.0" layoutY="420.0" onMouseClicked="#copyImageUrl" prefHeight="17.0" prefWidth="484.0" promptText="只有github有CDN" />
+       <TextField fx:id="originField" layoutX="168.0" layoutY="325.0" onMouseClicked="#copyImageUrl" prefHeight="17.0" prefWidth="484.0" />
+
+
+      <Button layoutX="220.0" layoutY="32.0" mnemonicParsing="false" onAction="#fromClipBoard" text="从粘贴板复制" />
+      <Button layoutX="371.0" layoutY="32.0" mnemonicParsing="false" onAction="#fromSelectedFile" text="选中文件上传" />
+
+
+      <ListView fx:id="configListField" layoutX="47.0" layoutY="73.0" prefHeight="222.0" prefWidth="106.0" />
+      <Button layoutX="46.0" layoutY="32.0" mnemonicParsing="false" onAction="#newConfig" prefHeight="27.0" prefWidth="50.0" text="新增" />
+      <ScrollPane layoutX="168.0" layoutY="73.0" prefHeight="222.0" prefWidth="484.0">
+         <content>
+            <FlowPane fx:id="imageFlowPane" prefHeight="217.0" prefWidth="481.0" />
+         </content>
+      </ScrollPane>
+
+
+
+   </children>
+</AnchorPane>

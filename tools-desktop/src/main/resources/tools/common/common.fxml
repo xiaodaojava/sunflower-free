@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.common.CommonController">
+   <children>
+      <TextField fx:id="q" layoutX="250.0" layoutY="20.0" promptText="Sun一下" />
+      <Label layoutX="38.0" layoutY="25.0" text="注意:本页面部分工具需要联网" />
+      <Button layoutX="38.0" layoutY="58.0" mnemonicParsing="false" onAction="#translator" text="翻译" />
+      <Button layoutX="110.0" layoutY="58.0" mnemonicParsing="false" onAction="#transform" text="各种转换" />
+      <Button layoutX="230.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchMaven" text="maven搜索" />
+   </children>
+</AnchorPane>

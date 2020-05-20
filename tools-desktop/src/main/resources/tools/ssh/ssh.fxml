@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0"
+            prefWidth="800.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="red.lixiang.tools.desktop.controller.ssh.SSHController">
+   <children>
+      <TableView fx:id="sshTable" layoutX="52.0" layoutY="108.0" prefHeight="233.0" prefWidth="475.0">
+        <columns>
+          <TableColumn fx:id="tagColumn" prefWidth="103.0" text="tag" />
+          <TableColumn fx:id="ipColumn" prefWidth="95.0" text="ip" />
+            <TableColumn fx:id="usernameColumn" prefWidth="99.0" text="登录用户名" />
+            <TableColumn fx:id="optColumn" prefWidth="125.0" text="操作" />
+        </columns>
+      </TableView>
+      <Button onAction="#newSSHConfig" layoutX="52.0" layoutY="69.0" mnemonicParsing="false" text="新增" />
+   </children>
+</AnchorPane>

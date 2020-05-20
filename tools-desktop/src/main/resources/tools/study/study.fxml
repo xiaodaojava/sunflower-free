@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.study.StudyController">
+   <children>
+      <Label layoutX="312.0" layoutY="8.0" prefHeight="51.0" prefWidth="123.0" text="每周技术主题讨论" />
+      <Label fx:id="" layoutX="103.0" layoutY="49.0" prefHeight="59.0" prefWidth="541.0" text="问题描述:正在加载中..." />
+      <ListView layoutX="103.0" layoutY="131.0" prefHeight="200.0" prefWidth="541.0" />
+      <Button layoutX="352.0" layoutY="359.0" mnemonicParsing="false" text="我要发言" />
+   </children>
+</AnchorPane>

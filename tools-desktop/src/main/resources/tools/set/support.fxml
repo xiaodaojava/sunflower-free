@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="198.0" layoutY="40.0" prefHeight="77.0" prefWidth="205.0" text="感谢您的支持! 您的支持是开发者前进下去的最大动力!" wrapText="true" />
+      <ImageView fitHeight="180.0" fitWidth="179.0" layoutX="35.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/wechat_pay.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="180.0" fitWidth="179.0" layoutX="358.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true" >
+         <image>
+            <Image url="@../icon/ali_pay.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

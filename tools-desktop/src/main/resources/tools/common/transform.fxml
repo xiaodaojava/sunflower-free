@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="red.lixiang.tools.desktop.controller.common.JsonFormatterController">
+   <children>
+      <TextArea wrapText="true" fx:id="originText" layoutX="15.0" layoutY="33.0" prefHeight="337.0" prefWidth="183.0" />
+      <Button layoutX="205.0" layoutY="50.0" mnemonicParsing="false" onAction="#formatJson" text="JSON格式化" />
+      <Button layoutX="205.0" layoutY="100.0" mnemonicParsing="false" onAction="#base64Encode" text="BASE64编码" />
+      <Button layoutX="205.0" layoutY="150.0" mnemonicParsing="false" onAction="#base64Decode" text="BASE64解码" />
+      <Button layoutX="205.0" layoutY="200.0" mnemonicParsing="false" onAction="#urlEncode" text="URLEncode" />
+      <Button layoutX="205.0" layoutY="250.0" mnemonicParsing="false" onAction="#urlDecode" text="URLDecode" />
+      <TextArea wrapText="true" fx:id="formatText" layoutX="300.0" layoutY="33.0" prefHeight="337.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+plugins {
+	id 'java'
+}
+
+
+group = 'red.lixiang.tools'
+version = '0.0.3-SNAPSHOT'
+
+
+
+allprojects {
+	sourceCompatibility = '14'
+
+	repositories {
+		maven { url 'https://maven.aliyun.com/repository/public/' }
+		maven { url 'https://maven.aliyun.com/repository/spring/'}
+		mavenCentral()
+	}
+}
+
+
