@@ -151,7 +151,7 @@ public class DesktopMain extends Application {
                 //如果配置文件不存在的话,去新建一个
                 Files.writeString(Paths.get(configFile),"");
             }
-            String s = Files.readString(Paths.get(configFile));
+            String s = Files.readString(Paths.get(configFile),StandardCharsets.UTF_8);
             GlobalConfig outConfig = JSON.parseObject(s, GlobalConfig.class);
             GlobalConfig config = GlobalConfig.getConfig();
             config.copy(outConfig);
@@ -186,7 +186,7 @@ public class DesktopMain extends Application {
         //这时候去保存配置
         GlobalConfig config = GlobalConfig.getConfig();
         String s = JSON.toJSONString(config);
-        Files.write(Paths.get(configFile), s.getBytes());
+        Files.writeString(Paths.get(configFile), s);
 
         System.out.println("Welcome Back");
     }
