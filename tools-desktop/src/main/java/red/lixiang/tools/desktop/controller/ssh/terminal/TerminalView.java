@@ -19,7 +19,7 @@ import red.lixiang.tools.desktop.utils.FXThreadTools;
 import red.lixiang.tools.desktop.utils.zmodem.ZModem;
 import red.lixiang.tools.desktop.utils.zmodem.util.CustomFile;
 import red.lixiang.tools.desktop.utils.zmodem.util.FileAdapter;
-import red.lixiang.tools.jdk.FileTools;
+import red.lixiang.tools.jdk.file.FileTools;
 
 import java.io.*;
 import java.util.HashMap;

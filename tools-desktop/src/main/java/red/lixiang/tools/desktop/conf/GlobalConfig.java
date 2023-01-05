@@ -8,7 +8,7 @@ import red.lixiang.tools.common.kubernetes.KubernetesConfig;
 import red.lixiang.tools.common.redis.RedisConfig;
 import red.lixiang.tools.desktop.controller.host.HostConfig;
 import red.lixiang.tools.desktop.controller.ssh.SSHConfig;
-import red.lixiang.tools.jdk.FileTools;
+import red.lixiang.tools.jdk.file.FileTools;
 import red.lixiang.tools.jdk.sql.SqlConfig;
 
 import java.io.ByteArrayOutputStream;

@@ -21,7 +21,7 @@ import red.lixiang.tools.common.github.model.UploadFileRes;
 import red.lixiang.tools.desktop.conf.GlobalConfig;
 import red.lixiang.tools.desktop.conf.RunParam;
 import red.lixiang.tools.desktop.utils.*;
-import red.lixiang.tools.jdk.FileTools;
+import red.lixiang.tools.jdk.file.FileTools;
 import red.lixiang.tools.jdk.RandomTools;
 import red.lixiang.tools.jdk.StringTools;
 

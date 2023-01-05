@@ -31,7 +31,7 @@ public class KubLogController {
         if(StringTools.isBlank(text)){
             text = "100";
         }
-        String logContent = KuberTools.getPodLogs(Integer.valueOf(text), currentPod, config);
+        String logContent = KuberTools.getPodLogs(Integer.valueOf(text), currentPod,null, config);
         logContent = logContent+"..获取时间:"+ LocalDateTime.now();
         // 获取焦点
         logContentArea.requestFocus();

@@ -9,7 +9,7 @@ version = '0.0.3-SNAPSHOT'
 
 
 allprojects {
-	sourceCompatibility = '14'
+	sourceCompatibility = '17'
 
 	repositories {
 		maven { url 'https://maven.aliyun.com/repository/public/' }

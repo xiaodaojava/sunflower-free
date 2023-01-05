@@ -1,17 +1,17 @@
 plugins {
 	id 'application'
-	id 'org.openjfx.javafxplugin' version '0.0.8'
+	id 'org.openjfx.javafxplugin' version '0.0.13'
 	id 'org.beryx.jlink' version '2.17.2'
 //	id 'org.javamodularity.moduleplugin' version '1.6.0'
 }
 javafx {
-	version = "14"
+	version = "19"
 	modules = [ 'javafx.controls' ,'javafx.fxml','javafx.swing','javafx.web']
 }
 java {
 	modularity.inferModulePath = true
 }
-sourceCompatibility = '14'
+sourceCompatibility = '17'
 
 tasks.withType(JavaCompile) {
 	options.compilerArgs += "--enable-preview"
@@ -34,20 +34,20 @@ application {
 }
 dependencies {
 
-	compile ('red.lixiang.tools:sunshine-common:0.0.6'){
+	implementation ('red.lixiang.tools:sunshine-common:1.0.8'){
 		exclude group:'org.apache.poi'
 		exclude group:'org.jsoup'
 		exclude group:'com.ctrip.framework.apollo'
 		exclude group:'io.kubernetes'
 		exclude group: 'org.mybatis'
 	}
-	compile group: 'com.hierynomus', name: 'sshj', version: '0.27.0'
+	implementation group: 'com.hierynomus', name: 'sshj', version: '0.27.0'
 
 
-	compile('com.fasterxml.jackson.core:jackson-databind:2.9.8')
+	implementation('com.fasterxml.jackson.core:jackson-databind:2.9.8')
 
-	compile('com.fasterxml.jackson.core:jackson-annotations:2.9.8')
-	runtime group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+	implementation('com.fasterxml.jackson.core:jackson-annotations:2.9.8')
+	runtimeOnly group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
 
 //	compile('org.jetbrains.pty4j:pty4j:0.8.6')
 
